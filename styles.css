@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #6B8A7A; /* Warna biru */
+}
+
+h1{
+    color: white;
+    margin: 20px 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Mengatur layout menjadi satu kolom */
+    align-items: center; /* Pusatkan konten secara horizontal */
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.upper-section,
+.lower-section {
+    display: flex;
+    justify-content: space-around; /* Membuat konten menjadi sejajar dengan jarak yang sama */
+    align-items: flex-start; /* Mengatur konten agar berada di atas */
+    width: 100%; /* Lebar maksimum */
+}
+
+.section {
+    width: 45%; /* Lebar setiap section */
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #DAD3BE; /* Warna teks biru */
+    text-align: center;
+    margin-bottom: 20px; /* Jarak antara section */
+}
+
+.section-dua{
+    width: 45%; /* Lebar setiap section */
+    background: white;
+    padding: 27px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #DAD3BE; /* Warna teks biru */
+    text-align: center;
+    margin-bottom: 30px; /* Jarak antara section */
+}
+
+.upload-container {
+    margin-bottom: 10px;
+}
+
+textarea, input[type="file"] {
+    width: calc(100% - 20px); /* Lebar dikurangi padding */
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #DAD3BE; /* Warna border biru */
+    border-radius: 5px; /* Tambahkan border-radius */
+}
+
+textarea::placeholder {
+    color: #DAD3BE; /* Warna placeholder biru */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #254336; /* Warna latar belakang biru */
+    color: white; /* Warna teks putih */
+    border: none; /* Hapus border */
+    border-radius: 5px; /* Tambahkan border-radius */
+    transition: background-color 0.3s; /* Transisi perubahan warna */
+}
+
+button:hover {
+    background-color: #DAD3BE; /* Warna biru tua saat hover */
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #254336; /* Warna biru */
+    text-decoration: none; /* Hapus garis bawah */
+}
+
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkripsi, Dekripsi, dan Steganografi RSA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kriptografi dan Steganografi - Kel. 8</h1>
+    <div class="container">
+        <div class="upper-section">
+            <div class="section">
+                <textarea id="inputText" placeholder="Masukkan teks di sini"></textarea>
+                <textarea id="outputText" placeholder="Teks hasil akan tampil di sini" readonly></textarea>
+                <button onclick="encryptText()">Enkripsi</button>
+                <button onclick="decryptText()">Dekripsi</button>
+            </div>
+
+            <div class="section-dua">
+                <input type="file" id="imageInput" accept="image/*">
+                <textarea id="embedTextInput" placeholder="Masukkan teks terenkripsi di sini"></textarea>
+                <a id="downloadLink" download="stegoImage.png" style="display:none;">Download Gambar Steganografi</a>
+                <button onclick="embedText()">Sisipkan Teks ke Gambar</button>
+            </div>
+        </div>
+
+        <div class="lower-section">
+            <div class="section">
+                <input type="file" id="stegoImageInput" accept="image/*">
+                <textarea id="extractedText" placeholder="Teks yang diekstrak akan tampil di sini" readonly></textarea>
+                <button onclick="extractText()">Ekstrak Teks dari Gambar</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
